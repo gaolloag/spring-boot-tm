@@ -24,7 +24,7 @@ public class TemplateResource {
     @Autowired
     private ITemplateService templateService;
 
-    @ApiOperation(value = "文件检索", tags = {"文件管理"}, notes = "文件检索")
+    @ApiOperation(value = "模板查询", tags = {"模板"}, notes = "模板")
     @PostMapping("/query")
     public Result<TemplateResultDto> query(
             @ApiParam(required = true, name = "accessToken", value = "鉴权token") @RequestHeader("accessToken") String accessToken,
