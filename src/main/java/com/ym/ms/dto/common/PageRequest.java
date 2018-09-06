@@ -12,7 +12,7 @@ import javax.validation.constraints.NotNull;
  * @date 9.5
  */
 @ApiModel(value = "分页请求")
-public class PageRequest<T> {
+public class PageRequest {
 
     @NotNull
     @ApiModelProperty(value = "页数",required = true, example = "0")
